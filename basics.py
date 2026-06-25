@@ -3,7 +3,7 @@ import pandas as pd
 # A onde dimensional labeled array capable of holding any data type - Series
 s=pd.Series([3,-5,7,4])
 index=['a','b','c','d']
-print(s)
+#print(s)
 
 # A two dimensional labeled data structure with columns of potentially different types - Data Frame
 data={
@@ -14,10 +14,7 @@ data={
 
 df=pd.DataFrame(data, columns=['Country','Capital','Population'])
 
-print(df)
-
 #print(help(pd.Series.loc))
-
 # A DataFrame is a 2-dimensional data structure that can store data of different types (including characters, integers, floating point values, categorical data and more) in columns
 #The index labels each row. By default, this is a sequence of integers starting at 0.
 
@@ -39,4 +36,7 @@ Ages=pd.Series([22,35,58],name='Age')
 
 print(df1['Age'].max())
 print(Ages.max())
+
+# The describe() method provides a quick overview of the numerical data in a DataFrame. 
+# As the Name and Sex columns are textual data, these are by default not taken into account by the describe() method.
 print(df1.describe())
