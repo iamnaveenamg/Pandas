@@ -43,3 +43,5 @@ time_filter2 = time.time() - start
 print(f"\nFilter with boolean: {time_filter1:.6f}s")
 print(f"Filter with query: {time_filter2:.6f}s")
      
+
+
