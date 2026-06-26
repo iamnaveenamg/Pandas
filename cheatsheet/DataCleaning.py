@@ -2,6 +2,7 @@
 import pandas as pd
 import numpy as np
 
+
 # Create data with missing values
 df = pd.DataFrame({
     'Name': ['John', 'Jane', 'Bob', 'Alice'],
